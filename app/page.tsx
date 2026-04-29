@@ -5,8 +5,8 @@ const navItems = [
   { href: "/about-the-school", label: "About" },
   { href: "/learners", label: "Learners" },
   { href: "/feeding", label: "Feeding" },
-  { href: "https://landahaninventory.vercel.app/", target: "_blank", rel: "noopener noreferrer", label: "Inventory" },
-  { href: "https://landahan-es-digital-library.my.canva.site/", target: "_blank", rel: "noopener noreferrer", label: "eLibrary" },
+  { href: "https://iboinventory.vercel.app/", target: "_blank", rel: "noopener noreferrer", label: "Inventory" },
+  { href: "https://iboeselibrary.my.canva.site/", target: "_blank", rel: "noopener noreferrer", label: "eLibrary" },
   { href: "/drrm", label: "DRRM" },
 ];
 
@@ -14,7 +14,7 @@ const photos = {
   hero:
     "/assets/images/hero-image.jpg",
   principal:
-    "/assets/images/principal-photo.jpg",
+    "/assets/images/1.png",
   about:
     "/assets/images/hero-image.jpg",
   youth:
@@ -78,7 +78,7 @@ const events = [
 
 const testimonials = [
   [
-    "Landahan Elementary School helps my child enjoy learning and become more confident every day.",
+    "Ibo Elementary School helps my child enjoy learning and become more confident every day.",
     "Maria Santos",
     "Parent",
   ],
@@ -106,18 +106,18 @@ export default function Home() {
       <div className="subpage-topbar">
         <div className="subpage-container topbar-inner">
           <div className="topbar-contact">
-            <span><a href="mailto:120746@deped.gov.ph">120746@deped.gov.ph</a></span>
-            <span><a href="tel:+630322310055">+63 0322310055</a></span>
+            <span><a href="mailto:120745@deped.gov.ph">120745@deped.gov.ph</a></span>
+            {/* <span><a href="tel:+630322310055">+63 0322310055</a></span> */}
           </div>
         </div>
       </div>
 
       <header className="subpage-header">
         <div className="subpage-container header-inner">
-          <Link href="/" className="subpage-brand" aria-label="Landahan home">
-            <img src="/assets/images/logo-landahan.png" alt="Landahan ES Logo" style={{ height: "50px" }} />
+          <Link href="/" className="subpage-brand" aria-label="Ibo home">
+            <img src="/assets/images/ibo-logo.png" alt="Ibo ES Logo" style={{ height: "50px" }} />
             <span>
-              <strong>Landahan</strong>
+              <strong>Ibo</strong>
               <small>Elementary School</small>
             </span>
           </Link>
@@ -135,7 +135,7 @@ export default function Home() {
             ))}
           </nav>
 
-          <a className="subpage-cta" href="https://www.facebook.com/weLoveLandahanES" target="_blank">
+          <a className="subpage-cta" href="https://www.facebook.com/ibotoledoelemschool" target="_blank">
             Facebook
           </a>
         </div>
@@ -146,7 +146,7 @@ export default function Home() {
         <div className="hero-orb" />
         <div className="home-hero-copy">
           <p className="mini-label"></p>
-          <h1>Welcome to Landahan Elementary School</h1>
+          <h1>Welcome to Ibo Elementary School</h1>
           <p>
             Where every learner is our top priority.
           </p>
@@ -167,9 +167,9 @@ export default function Home() {
           <p className="kicker">School Head Corner</p>
           <h2>Message from the Principal</h2>
           <p>
-            Welcome to Landahan Elementary School. Despite our remote location in Toledo City, we remain committed to delivering quality education and shaping resilient, value-driven learners. Together with our teachers, parents, and community, we strive to create a brighter future for every child.
+            Welcome to Ibo Elementary School, a coastal school in Toledo City. Despite the challenges of natural disasters, we remain resilient and steadfast in our mission. Our learners are our top priority, and we are committed to providing safe, inclusive, and quality education for every child.
           </p>
-          <h3>NARCISO M. MORALES JR. <br /><em>School Principal I</em></h3>
+          <h3>MAIDA A. PANARES<br /><em>School Principal I</em></h3>
           {/* <div className="mission-list">
             <article>
               <span>01</span>
@@ -268,7 +268,7 @@ export default function Home() {
               <img src={image} alt="" />
               <div>
                 <h3>{title}</h3>
-                <p>Landahan Elementary School campus</p>
+                <p>Ibo Elementary School campus</p>
                 <time>{date}</time>
               </div>
             </article>
@@ -314,7 +314,7 @@ export default function Home() {
 
       <section className="blog-block section-wrap">
         <p className="kicker center">Blog and News</p>
-        <h2>Welcome to Landahan ES blog</h2>
+        <h2>Welcome to Ibo ES blog</h2>
         <p className="section-note">
           A quick directory of helpful school updates, reminders, and learning
           resources.
@@ -349,7 +349,7 @@ export default function Home() {
             <Link href="/" className="subpage-brand footer-brand">
               <span className="subpage-brand-icon">LES</span>
               <span>
-                <strong>Landahan</strong>
+                <strong>Ibo</strong>
                 <small>Elementary School</small>
               </span>
             </Link>
@@ -358,7 +358,7 @@ export default function Home() {
               caring learning spaces for every learner.
             </p>
             <address>
-              <span>Landahan, Toledo City, Cebu</span>
+              <span>Ibo, Toledo City, Cebu</span>
               <span>+63 912 345 6789</span>
             </address>
           </div>
@@ -401,7 +401,7 @@ export default function Home() {
           </div>
         </div> */}
         <p className="subpage-copyright">
-          Copyright © 2026 All Rights Reserved by Landahan Elementary School
+          Copyright © 2026 All Rights Reserved by Ibo Elementary School
         </p>
       </footer>
     </main>

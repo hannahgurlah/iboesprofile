@@ -193,7 +193,7 @@ export default function DrrmPage() {
     <SiteShell
       eyebrow="Student Safety"
       title="School DRRM"
-      description="This DRRM page outlines hazard-specific contingency plan articles for Landahan Elementary School, a school in a remote mountain area of Toledo City."
+      description="This DRRM page outlines hazard-specific contingency plan articles for Ibo Elementary School, a school in a remote mountain area of Toledo City."
     >
       <section className="content-grid section-space">
         <article className="panel panel-story">

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Landahan Elementary School",
+  title: "Ibo Elementary School",
   description:
-    "A modern school profile website built with Next.js for Landahan Elementary School.",
+    "A modern school profile website built with Next.js for Ibo Elementary School.",
 };
 
 export default function RootLayout({

@@ -6,8 +6,8 @@ const navItems = [
   { href: "/about-the-school", label: "About" },
   { href: "/learners", label: "Learners" },
   { href: "/feeding", label: "Feeding" },
-  { href: "https://landahaninventory.vercel.app/", target: "_blank", rel: "noopener noreferrer", label: "Inventory" },
-  { href: "https://landahan-es-digital-library.my.canva.site/", target: "_blank", rel: "noopener noreferrer", label: "eLibrary" },
+  { href: "https://iboinventory.vercel.app/", target: "_blank", rel: "noopener noreferrer", label: "Inventory" },
+  { href: "https://iboeselibrary.my.canva.site/", target: "_blank", rel: "noopener noreferrer", label: "eLibrary" },
   { href: "/drrm", label: "DRRM" },
 ];
 
@@ -49,18 +49,18 @@ export function SiteShell({
       <div className="subpage-topbar">
         <div className="subpage-container topbar-inner">
           <div className="topbar-contact">
-            <span><a href="mailto:120746@deped.gov.ph">120746@deped.gov.ph</a></span>
-            <span><a href="tel:+630322310055">+63 0322310055</a></span>
+            <span><a href="mailto:120745@deped.gov.ph">120745@deped.gov.ph</a></span>
+            {/* <span><a href="tel:+630322310055">+63 0322310055</a></span> */}
           </div>
         </div>
       </div>
 
       <header className="subpage-header">
         <div className="subpage-container header-inner">
-          <Link href="/" className="subpage-brand" aria-label="Landahan home">
-            <img src="/assets/images/logo-landahan.png" alt="Landahan ES Logo" style={{ height: "50px" }} />
+          <Link href="/" className="subpage-brand" aria-label="Ibo home">
+            <img src="/assets/images/ibo-logo.png" alt="Ibo ES Logo" style={{ height: "50px" }} />
             <span>
-              <strong>Landahan</strong>
+              <strong>Ibo</strong>
               <small>Elementary School</small>
             </span>
           </Link>
@@ -78,7 +78,7 @@ export function SiteShell({
             ))}
           </nav>
 
-          <a className="subpage-cta" href="https://www.facebook.com/weLoveLandahanES" target="_blank">
+          <a className="subpage-cta" href="https://www.facebook.com/ibotoledoelemschool" target="_blank">
             Facebook
           </a>
         </div>
@@ -126,7 +126,7 @@ export function SiteShell({
             <Link href="/" className="subpage-brand footer-brand">
               <span className="subpage-brand-icon">LES</span>
               <span>
-                <strong>Landahan</strong>
+                <strong>Ibo</strong>
                 <small>Elementary School</small>
               </span>
             </Link>
@@ -135,7 +135,7 @@ export function SiteShell({
               caring learning spaces for every learner.
             </p>
             <address>
-              <span>Landahan, Toledo City, Cebu</span>
+              <span>Ibo, Toledo City, Cebu</span>
               <span>+63 912 345 6789</span>
             </address>
           </div>
@@ -167,7 +167,7 @@ export function SiteShell({
           </div>
         </div> */}
         <p className="subpage-copyright">
-          Copyright © 2026 All Rights Reserved by Landahan Elementary School
+          Copyright © 2026 All Rights Reserved by Ibo Elementary School
         </p>
       </footer>
     </main>

@@ -1,9 +1,9 @@
 import { SiteShell } from "../components/site-shell";
 
 const feedingGoals = [
-  { value: "34", label: "Number of Beneficiaries" },
-  { value: "18", label: "Female Beneficiaries" },
-  { value: "16", label: "Male Beneficiaries" },
+  { value: "163", label: "Number of Beneficiaries" },
+  { value: "76", label: "Female Beneficiaries" },
+  { value: "87", label: "Male Beneficiaries" },
 ];
 
 const supportAreas = [
