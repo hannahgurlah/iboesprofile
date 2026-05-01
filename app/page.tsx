@@ -153,7 +153,7 @@ export default function Home() {
         <div className="home-hero-copy">
           <p className="mini-label"></p>
           <h1>Welcome to Ibo Elementary School</h1>
-          <p>
+          <p style={{ fontSize: "20px" }}>
             Where every learner is our top priority.
           </p>
           <a href="/about-the-school" className="pill-button">
@@ -161,6 +161,7 @@ export default function Home() {
           </a>
         </div>
       </section>
+
 
       <section className="about-block section-wrap">
         <div className="photo-stack">
@@ -348,6 +349,10 @@ export default function Home() {
           </form>
         </div>
       </section> */}
+
+      <section className="section-wrap" style={{ padding: "60px 0", marginBottom: "2rem" }}>
+        <p style={{ border: "2px solid #CE6600", backgroundColor: "#FDF6E3", color: "#342C21", fontSize: "18px", textAlign: "center", lineHeight: "1.8rem", maxWidth: "800px", margin: "0 auto", padding: "1rem", borderRadius: "10px" }}>This school online portfolio is established to showcase the school’s programs, achievements, and resources while promoting transparency and accessibility to stakeholders. In line with the <strong style={{ fontSize: "18px" }}>e-Government Act</strong>, it supports a paperless system by digitizing records, communications, and reports, enabling more efficient, sustainable, and accessible school operations.</p>
+      </section>
 
       <footer className="subpage-footer">
         {/* <div className="subpage-container footer-grid">

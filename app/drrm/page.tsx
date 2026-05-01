@@ -15,6 +15,13 @@ const planningPriorities = [
   "Coordinate immediately with parents, barangay officials, health workers, and rescue units during major incidents.",
 ];
 
+const depedOrderActions = [
+  "Organize a student-led school watching activity during the opening month of the school year.",
+  "Include learner representatives from different grade levels, sections, and school groups.",
+  "Use the school watching checklist to identify hazards, unsafe areas, and needed safety improvements.",
+  "Update and post hazard maps in visible school areas so learners, staff, and visitors can use them during preparedness activities.",
+];
+
 const contingencyPlans = [
   {
     title: "Fire",
@@ -196,6 +203,42 @@ export default function DrrmPage() {
       title="School DRRM"
       description="This DRRM page outlines hazard-specific contingency plan articles for Ibo Elementary School, a coastal school in Toledo City."
     >
+
+      <section className="content-grid section-space">
+        <article className="panel panel-story">
+          <p className="eyebrow">Policy Basis</p>
+          <h2>DepEd Order No. 23, s. 2015</h2>
+          <p>
+            DepEd Order No. 23, s. 2015, titled Student-Led School Watching and
+            Hazard Mapping, guides public schools in involving learners in
+            identifying hazards, understanding risks, and helping build a
+            stronger culture of safety in school.
+          </p>
+          <p>
+            For a coastal school, this means learners should help observe and
+            map risks such as high tide areas, coastal flooding paths, unsafe
+            walkways, drainage concerns, electrical hazards, evacuation routes,
+            and other conditions that may affect school safety.
+          </p>
+        </article>
+
+        <aside className="panel panel-points">
+          <p className="eyebrow">School Application</p>
+          <ul>
+            {depedOrderActions.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </aside>
+      </section>
+
+      <section style={{ alignItems: "center", marginBottom: 40, marginTop: 10 }}>
+        <h3 style={{ marginTop: 40, fontSize: '24px' }}>DRRM Hazard Map</h3>
+        <img style={{ border: "5px solid #d0d0d0" }} src="/assets/images/drrm-school-map-ibohazard.jpg" alt="DRRM Hazard Map" />
+        <h3 style={{ marginTop: 40, fontSize: '24px' }}>DRRM Evacuation Map</h3>
+        <img style={{ border: "5px solid #d0d0d0" }} src="/assets/images/drrm-school-map-iboevacuation.jpg" alt="DRRM Evacuation Map" />
+      </section>
+
       <section className="content-grid section-space">
         <article className="panel panel-story">
           <p className="eyebrow">School Risk Context</p>
@@ -221,12 +264,8 @@ export default function DrrmPage() {
           </ul>
         </aside>
       </section>
-      <section style={{ alignItems: "center" }}>
-        <h3 style={{ marginTop: 40, fontSize: '24px' }}>DRRM Hazard Map</h3>
-        <img style={{ border: "5px solid #d0d0d0" }} src="/assets/images/drrm-school-map-ibohazard.jpg" alt="DRRM Hazard Map" />
-        <h3 style={{ marginTop: 40, fontSize: '24px' }}>DRRM Evacuation Map</h3>
-        <img style={{ border: "5px solid #d0d0d0" }} src="/assets/images/drrm-school-map-iboevacuation.jpg" alt="DRRM Evacuation Map" />
-      </section>
+
+
 
       <section className="programs">
         <div className="section-heading">
