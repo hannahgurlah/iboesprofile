@@ -510,6 +510,42 @@ a {
   gap: 18px;
 }
 
+.plan-tabs {
+  display: grid;
+  gap: 18px;
+}
+
+.plan-tab-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.plan-tab-list button {
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 16px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.plan-tab-list button:hover,
+.plan-tab-list button:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.plan-tab-list button.active {
+  border-color: var(--accent-deep);
+  background: var(--accent-deep);
+  color: #fff;
+}
+
 .plan-article {
   border: 1px solid var(--line);
   border-radius: 28px;
@@ -539,6 +575,12 @@ a {
   margin-top: 18px;
 }
 
+.plan-tab-sections {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
 .plan-section h4 {
   margin-bottom: 10px;
   color: var(--accent-deep);
@@ -566,6 +608,7 @@ a {
   .stats,
   .program-grid,
   .article-grid,
+  .plan-tab-sections,
   .stock-card-grid,
   .form-grid {
     grid-template-columns: 1fr;
@@ -884,6 +927,25 @@ a {
   padding: 28px;
 }
 
+.subpage-site .plan-tab-list button {
+  border: 3px solid var(--sub-line);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--sub-ink);
+  box-shadow: none;
+}
+
+.subpage-site .plan-tab-list button:hover,
+.subpage-site .plan-tab-list button:focus-visible {
+  border-color: var(--sub-green);
+}
+
+.subpage-site .plan-tab-list button.active {
+  border-color: var(--sub-green);
+  background: var(--sub-green);
+  color: #fff;
+}
+
 .subpage-site .eyebrow,
 .subpage-site .card-label,
 .subpage-site .inventory-form span,
@@ -1112,6 +1174,17 @@ a {
   .subpage-site .stock-card-form,
   .subpage-site .plan-article {
     padding: 22px;
+  }
+
+  .plan-tab-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .plan-tab-list button {
+    width: 100%;
+    min-height: 48px;
+    padding-inline: 10px;
   }
 
   .newsletter-form {

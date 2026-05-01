@@ -35,8 +35,8 @@ const photos = {
     "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=85",
   galleryTwo:
     "https://images.unsplash.com/photo-1567057419565-4349c49d8a04?auto=format&fit=crop&w=600&q=85",
-  blogOne:
-    "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=85",
+  qrCSM:
+    "/assets/images/qr-csm.png",
 };
 
 const programs = [
@@ -134,6 +134,10 @@ export default function Home() {
               </Link>
             ))}
           </nav>
+
+          <a className="subpage-cta" href="/assets/IboES-CITIZENS-CHARTER.pdf" target="_blank">
+            Citizen&apos;s Charter
+          </a>
 
           <a className="subpage-cta" href="https://www.facebook.com/ibotoledoelemschool" target="_blank">
             Facebook
@@ -400,6 +404,12 @@ export default function Home() {
             </div>
           </div>
         </div> */}
+        <div style={{ margin: "10px auto", display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <p style={{ marginTop: "20px" }}>
+            Scan the QR Code on how satisfied are you as a stakeholder of Ibo Elementary School
+          </p>
+          <img src={photos.qrCSM} alt="" style={{ width: "10%", margin: "0 auto", padding: "0 1rem" }} />
+        </div>
         <p className="subpage-copyright">
           Copyright © 2026 All Rights Reserved by Ibo Elementary School
         </p>

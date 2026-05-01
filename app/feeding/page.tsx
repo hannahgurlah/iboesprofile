@@ -31,7 +31,9 @@ export default function FeedingPage() {
       title="School Feeding Program"
       description=""
     >
+      <h3>School Based Feeding Program SY 2025-2026</h3>
       <section className="stats stats-three">
+
         {feedingGoals.map((item) => (
           <article key={item.label} className="stat-card">
             <h2>{item.value}</h2>

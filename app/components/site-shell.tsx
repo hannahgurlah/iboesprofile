@@ -16,6 +16,36 @@ const footerLinks = {
   "Our Course": ["Courses", "Blog", "Program", "Contact Us"],
 };
 
+const photos = {
+  hero:
+    "/assets/images/hero-image.jpg",
+  principal:
+    "/assets/images/1.png",
+  about:
+    "/assets/images/hero-image.jpg",
+  youth:
+    "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=700&q=85",
+  health:
+    "https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=700&q=85",
+  social:
+    "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=85",
+  services:
+    "https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=85",
+  video:
+    "https://images.unsplash.com/photo-1594608661623-aa0bd3a69799?auto=format&fit=crop&w=1600&q=85",
+  eventOne:
+    "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=500&q=85",
+  eventTwo:
+    "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=500&q=85",
+  galleryOne:
+    "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=85",
+  galleryTwo:
+    "https://images.unsplash.com/photo-1567057419565-4349c49d8a04?auto=format&fit=crop&w=600&q=85",
+  qrCSM:
+    "/assets/images/qr-csm.png",
+};
+
+
 const recentPosts = [
   {
     title: "Building Reading Habits At Home",
@@ -77,6 +107,10 @@ export function SiteShell({
               </Link>
             ))}
           </nav>
+
+          <a className="subpage-cta" href="/assets/IboES-CITIZENS-CHARTER.pdf" target="_blank">
+            Citizen&apos;s Charter
+          </a>
 
           <a className="subpage-cta" href="https://www.facebook.com/ibotoledoelemschool" target="_blank">
             Facebook
@@ -166,6 +200,12 @@ export function SiteShell({
             </div>
           </div>
         </div> */}
+        <div style={{ margin: "10px auto", display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <p style={{ marginTop: "20px" }}>
+            Scan the QR Code on how satisfied are you as a stakeholder of Ibo Elementary School
+          </p>
+          <img src={photos.qrCSM} alt="" style={{ width: "10%", margin: "0 auto", padding: "0 1rem" }} />
+        </div>
         <p className="subpage-copyright">
           Copyright © 2026 All Rights Reserved by Ibo Elementary School
         </p>
