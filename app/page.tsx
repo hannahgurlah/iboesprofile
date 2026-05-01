@@ -35,6 +35,8 @@ const photos = {
     "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=85",
   galleryTwo:
     "https://images.unsplash.com/photo-1567057419565-4349c49d8a04?auto=format&fit=crop&w=600&q=85",
+  blogOne:
+    "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=85",
   qrCSM:
     "/assets/images/qr-csm.png",
 };
