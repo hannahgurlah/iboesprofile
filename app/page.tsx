@@ -71,37 +71,6 @@ const services = [
   ["Learner Support", "Care, guidance, and inclusive support for every child."],
 ];
 
-const events = [
-  ["School Reading Month", "October 29, 2026", photos.eventOne, "purple"],
-  ["Nutrition and Wellness Day", "November 7, 2026", photos.eventTwo, "orange"],
-  ["Family and Community Day", "December 12, 2026", photos.social, "pink"],
-  ["Learners Showcase", "November 25, 2026", photos.galleryTwo, "green"],
-];
-
-const testimonials = [
-  [
-    "Ibo Elementary School helps my child enjoy learning and become more confident every day.",
-    "Maria Santos",
-    "Parent",
-  ],
-  [
-    "The teachers are patient, prepared, and committed to helping pupils understand their lessons.",
-    "Joel Reyes",
-    "Parent",
-  ],
-  [
-    "The school community works together, from classroom learning to feeding and safety programs.",
-    "Ana Villanueva",
-    "Guardian",
-  ],
-];
-
-const blogPosts = [
-  ["Building reading habits at home", photos.blogOne],
-  ["How feeding support improves learning", photos.health],
-  ["Preparing pupils for safer school days", photos.social],
-];
-
 export default function Home() {
   return (
     <main className="school-home">
@@ -109,7 +78,6 @@ export default function Home() {
         <div className="subpage-container topbar-inner">
           <div className="topbar-contact">
             <span><a href="mailto:120745@deped.gov.ph">120745@deped.gov.ph</a></span>
-            {/* <span><a href="tel:+630322310055">+63 0322310055</a></span> */}
           </div>
         </div>
       </div>
@@ -177,240 +145,17 @@ export default function Home() {
             Welcome to Ibo Elementary School, a coastal school in Toledo City. Despite the challenges of natural disasters, we remain resilient and steadfast in our mission. Our learners are our top priority, and we are committed to providing safe, inclusive, and quality education for every child.
           </p>
           <h3>MAIDA A. PANARES<br /><em>School Principal I</em></h3>
-          {/* <div className="mission-list">
-            <article>
-              <span>01</span>
-              <div>
-                <h3>Our Mission</h3>
-                <p>Provide inclusive education that develops capable learners.</p>
-              </div>
-            </article>
-            <article>
-              <span>02</span>
-              <div>
-                <h3>Our Commitment</h3>
-                <p>Serve children with care, consistency, and accountability.</p>
-              </div>
-            </article>
-          </div>
-          <Link href="/about-the-school" className="pill-button compact">
-            About Us
-          </Link> */}
         </div>
       </section>
 
-      {/* <section id="programs" className="program-band">
-        <div className="section-wrap">
-          <div className="split-heading">
-            <div>
-              <p className="kicker">What We Do</p>
-              <h2>Our Programs</h2>
-            </div>
-            <p>
-              Programs and services are focused on the primary areas of impact
-              that help pupils achieve their goals and strengthen communities.
-            </p>
-          </div>
 
-          <div className="program-card-grid">
-            {programs.map((program) => (
-              <article key={program.title} className="image-card">
-                <div className="image-frame">
-                  <img src={program.image} alt="" />
-                  <span>{program.icon}</span>
-                </div>
-                <h3>{program.title}</h3>
-                <p>{program.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="services-block section-wrap">
-        <p className="kicker center">Our Services</p>
-        <h2>We Give The Best For Your Child</h2>
-        <div className="service-layout">
-          <div className="service-list">
-            {services.slice(0, 3).map(([title, text], index) => (
-              <article key={title} className="service-item">
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <div>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-          <img src={photos.services} alt="Happy pupils running at school" />
-          <div className="service-list">
-            {services.slice(3).map(([title, text], index) => (
-              <article key={title} className="service-item">
-                <span>{String(index + 4).padStart(2, "0")}</span>
-                <div>
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="video-strip" aria-label="School activity preview">
-        <img src={photos.video} alt="Children working together in classroom" />
-        <button aria-label="Play school video preview">Play</button>
-      </section>
-
-      <section className="events-block section-wrap">
-        <p className="kicker center">Event</p>
-        <h2>Upcoming Events</h2>
-        <p className="section-note">
-          We are thrilled to announce upcoming events. Explore key celebrations
-          and school activities.
-        </p>
-        <div className="event-grid">
-          {events.map(([title, date, image, color]) => (
-            <article key={title} className={`event-card ${color}`}>
-              <img src={image} alt="" />
-              <div>
-                <h3>{title}</h3>
-                <p>Ibo Elementary School campus</p>
-                <time>{date}</time>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="testimonial-band">
-        <div className="section-wrap">
-          <p className="kicker center">Testimonials</p>
-          <h2>What Parents Say About Us</h2>
-          <p className="section-note">
-            The success and happiness of our students are at the heart of
-            everything we do.
-          </p>
-          <div className="testimonial-grid">
-            {testimonials.map(([quote, name, role]) => (
-              <article key={name} className="testimonial-card">
-                <div className="stars">*****</div>
-                <p>{quote}</p>
-                <strong>{name}</strong>
-                <span>{role}</span>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="gallery-block section-wrap">
-        <p className="kicker center">Gallery</p>
-        <h2>Tiny Scholars Showcase</h2>
-        <p className="section-note">
-          Marked by significant growth and inspiration as toddlers transition
-          from infancy.
-        </p>
-        <div className="gallery-grid">
-          <img className="gallery-large" src={photos.galleryOne} alt="" />
-          <img src={photos.galleryTwo} alt="" />
-          <img src={photos.social} alt="" />
-          <img src={photos.youth} alt="" />
-        </div>
-      </section>
-
-      <section className="blog-block section-wrap">
-        <p className="kicker center">Blog and News</p>
-        <h2>Welcome to Ibo ES blog</h2>
-        <p className="section-note">
-          A quick directory of helpful school updates, reminders, and learning
-          resources.
-        </p>
-        <div className="blog-grid">
-          {blogPosts.map(([title, image]) => (
-            <article key={title} className="blog-card">
-              <img src={image} alt="" />
-              <h3>{title}</h3>
-              <p>24 December · 245 views</p>
-            </article>
-          ))}
-        </div>
-      </section> */}
-
-      {/* <section className="newsletter-band">
-        <div className="subpage-container">
-          <h2>Don&apos;t Miss Updates From Our School Community</h2>
-          <form className="newsletter-form">
-            <label className="sr-only" htmlFor="home-email">
-              Email address
-            </label>
-            <input id="home-email" type="email" placeholder="Enter Your mail" />
-            <button type="button">Subscribe Now</button>
-          </form>
-        </div>
-      </section> */}
 
       <section className="section-wrap" style={{ padding: "60px 0", marginBottom: "2rem" }}>
         <p style={{ border: "2px solid #CE6600", backgroundColor: "#FDF6E3", color: "#342C21", fontSize: "18px", textAlign: "center", lineHeight: "1.8rem", maxWidth: "780px", margin: "0 auto", padding: "1rem", borderRadius: "10px" }}>This school online portfolio is established to showcase the school’s programs, achievements, and resources while promoting transparency and accessibility to stakeholders. In line with the <strong style={{ fontSize: "18px" }}>e-Government Act</strong>, it supports a paperless system by digitizing records, communications, and reports, enabling more efficient, sustainable, and accessible school operations.</p>
       </section>
 
       <footer className="subpage-footer">
-        {/* <div className="subpage-container footer-grid">
-          <div>
-            <Link href="/" className="subpage-brand footer-brand">
-              <span className="subpage-brand-icon">LES</span>
-              <span>
-                <strong>Ibo</strong>
-                <small>Elementary School</small>
-              </span>
-            </Link>
-            <p>
-              We are passionate about providing high-quality resources and safe,
-              caring learning spaces for every learner.
-            </p>
-            <address>
-              <span>Ibo, Toledo City, Cebu</span>
-              <span>+63 912 345 6789</span>
-            </address>
-          </div>
 
-          <div>
-            <h3>About Us</h3>
-            <a href="#">Our Mission</a>
-            <a href="#">Our Course</a>
-            <a href="#">Careers</a>
-            <a href="#">Blog & News</a>
-            <a href="#">Event & News</a>
-          </div>
-
-          <div>
-            <h3>Our Course</h3>
-            <a href="#">Courses</a>
-            <a href="#">Blog</a>
-            <a href="#">Program</a>
-            <a href="#">Contact Us</a>
-          </div>
-
-          <div>
-            <h3>Recent Post</h3>
-            <div className="recent-posts">
-              <article>
-                <img src={photos.blogOne} alt="" />
-                <div>
-                  <time>October 29, 2026</time>
-                  <h4>Building Reading Habits At Home</h4>
-                </div>
-              </article>
-              <article>
-                <img src={photos.health} alt="" />
-                <div>
-                  <time>October 29, 2026</time>
-                  <h4>How Feeding Support Improves Learning</h4>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div> */}
         <div style={{ margin: "10px auto", display: "flex", flexDirection: "column", alignItems: "center" }}>
           <p style={{ marginTop: "20px" }}>
             Scan the QR Code on how satisfied are you as a stakeholder of Ibo Elementary School
