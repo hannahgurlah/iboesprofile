@@ -17,59 +17,9 @@ const photos = {
     "/assets/images/1.png",
   about:
     "/assets/images/hero-image.jpg",
-  youth:
-    "https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=700&q=85",
-  health:
-    "https://images.unsplash.com/photo-1596464716127-f2a82984de30?auto=format&fit=crop&w=700&q=85",
-  social:
-    "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=700&q=85",
-  services:
-    "https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=85",
-  video:
-    "https://images.unsplash.com/photo-1594608661623-aa0bd3a69799?auto=format&fit=crop&w=1600&q=85",
-  eventOne:
-    "https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=500&q=85",
-  eventTwo:
-    "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=500&q=85",
-  galleryOne:
-    "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=800&q=85",
-  galleryTwo:
-    "https://images.unsplash.com/photo-1567057419565-4349c49d8a04?auto=format&fit=crop&w=600&q=85",
-  blogOne:
-    "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=85",
   qrCSM:
     "/assets/images/qr-csm.png",
 };
-
-const programs = [
-  {
-    title: "Learner Development",
-    text: "Daily classroom experiences that strengthen reading, numeracy, creativity, and confidence.",
-    image: photos.youth,
-    icon: "LD",
-  },
-  {
-    title: "Health and Nutrition",
-    text: "Feeding and wellness support that helps pupils arrive ready to learn and participate.",
-    image: photos.health,
-    icon: "HN",
-  },
-  {
-    title: "Community Responsibility",
-    text: "School activities that build service, kindness, safety awareness, and civic pride.",
-    image: photos.social,
-    icon: "CR",
-  },
-];
-
-const services = [
-  ["Instruction", "Focused lessons and guided practice for every grade level."],
-  ["School Feeding", "Meal support and health monitoring for learner wellbeing."],
-  ["eLibrary", "Reading materials and digital references for pupils and teachers."],
-  ["DRRM", "Preparedness programs that keep the campus safer and ready."],
-  ["Inventory", "Organized records for supplies, rooms, and school resources."],
-  ["Learner Support", "Care, guidance, and inclusive support for every child."],
-];
 
 export default function Home() {
   return (
