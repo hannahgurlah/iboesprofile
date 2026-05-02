@@ -295,6 +295,14 @@ export default function DrrmPage() {
         <ContingencyPlanTabs plans={contingencyPlans} />
       </section>
 
+      <section style={{ alignItems: "center", marginBottom: 40, marginTop: 10 }}>
+        {/* <h3 style={{ marginTop: 40, fontSize: '24px' }}>NATIONWIDE SIMULTANEOUS EARTHQUAKE DRILL</h3> */}
+        <p style={{ fontSize: "18px" }}><strong>NATIONWIDE SIMULTANEOUS EARTHQUAKE DRILL</strong> <br />1st Quarter | March 13, 2026</p>
+        <img style={{ border: "5px solid #d0d0d0" }} src="/assets/images/ibo.png" alt="Earthquake Drill" />
+      </section>
+
+
+
       <section style={{ alignItems: "center" }}>
         <h3 style={{ marginTop: 40, fontSize: '24px' }}>Emergency Contact Numbers</h3>
         <img style={{ border: "5px solid #d0d0d0" }} src="/assets/images/emergency-contact-numbers.jpg" alt="Safety Guidelines" />

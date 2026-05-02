@@ -1,5 +1,9 @@
 import { SiteShell } from "../components/site-shell";
 
+const feedingReports = [
+  { title: "Teachers Trainings Attended", href: "/assets/report/trainings-ibo.pdf" },
+];
+
 const values = [
   "Academic rigor with compassion",
   "Faith in service, leadership, and integrity",
@@ -41,9 +45,24 @@ export default function AboutSchoolPage() {
         </div>
       </section>
 
-      <section>
-        <h2>Teachers Trainings Attended</h2>
+      <section className="section-wrap" style={{ padding: "60px 0", marginBottom: "2rem" }}>
+        <div style={{ display: "grid", gap: "24px", maxWidth: "960px", margin: "0 auto" }}>
+          {feedingReports.map((report) => (
+            <article
+              key={report.href}
+              style={{ border: "2px solid #CE6600", backgroundColor: "#FDF6E3", color: "#342C21", fontSize: "18px", lineHeight: "1.8rem", padding: "1rem", borderRadius: "10px" }}
+            >
+              <h4 style={{ marginTop: 0 }}>{report.title}</h4>
+              <iframe
+                src={report.href}
+                title={report.title}
+                style={{ width: "100%", minHeight: "620px", border: "1px solid #d8c7ac", borderRadius: "6px", backgroundColor: "#fff" }}
+              />
+            </article>
+          ))}
+        </div>
       </section>
+
     </SiteShell >
   );
 }
