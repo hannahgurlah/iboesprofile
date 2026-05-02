@@ -61,11 +61,6 @@ export default function FeedingPage() {
                 title={report.title}
                 style={{ width: "100%", minHeight: "620px", border: "1px solid #d8c7ac", borderRadius: "6px", backgroundColor: "#fff" }}
               />
-              <p style={{ marginBottom: 0 }}>
-                <a href={report.href} target="_blank" rel="noopener noreferrer">
-                  Open {report.title}
-                </a>
-              </p>
             </article>
           ))}
         </div>
