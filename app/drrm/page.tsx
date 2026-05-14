@@ -1,6 +1,10 @@
 import { SiteShell } from "../components/site-shell";
 import { ContingencyPlanTabs } from "./contingency-plan-tabs";
 
+const drrmReports = [
+  { title: "DRRM School Risk Assessment Report and Checklist", href: "/assets/report/iboes-DRRM-School Risk Assessment Report and Checklist.pdf" }
+];
+
 const siteContext = [
   "The school is located in a coastal area of Toledo City.",
   "The school may be affected by strong winds, heavy rain, high tide, coastal flooding, and storm surge warnings.",
@@ -301,6 +305,23 @@ export default function DrrmPage() {
         <img style={{ border: "5px solid #d0d0d0" }} src="/assets/images/ibo.png" alt="Earthquake Drill" />
       </section>
 
+      <section className="section-wrap" style={{ padding: "60px 0", marginBottom: "2rem" }}>
+        <div style={{ display: "grid", gap: "24px", maxWidth: "960px", margin: "0 auto" }}>
+          {drrmReports.map((report) => (
+            <article
+              key={report.href}
+              style={{ border: "2px solid #CE6600", backgroundColor: "#FDF6E3", color: "#342C21", fontSize: "18px", lineHeight: "1.8rem", padding: "1rem", borderRadius: "10px" }}
+            >
+              <h4 style={{ marginTop: 0 }}>{report.title}</h4>
+              <iframe
+                src={report.href}
+                title={report.title}
+                style={{ width: "100%", minHeight: "620px", border: "1px solid #d8c7ac", borderRadius: "6px", backgroundColor: "#fff" }}
+              />
+            </article>
+          ))}
+        </div>
+      </section>
 
 
       <section style={{ alignItems: "center" }}>

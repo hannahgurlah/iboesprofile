@@ -66,21 +66,7 @@ export default function FeedingPage() {
         </div>
       </section>
 
-      {/* <section className="programs">
-        <div className="section-heading">
-          <p className="eyebrow">How It Works</p>
-          <h2>Nutrition support that helps students stay ready to learn.</h2>
-        </div>
 
-        <div className="program-grid">
-          {supportAreas.map((area) => (
-            <article key={area.title} className="program-card">
-              <h3>{area.title}</h3>
-              <p>{area.description}</p>
-            </article>
-          ))}
-        </div>
-      </section> */}
     </SiteShell>
   );
 }
