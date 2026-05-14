@@ -2,7 +2,7 @@ import { SiteShell } from "../components/site-shell";
 import { ContingencyPlanTabs } from "./contingency-plan-tabs";
 
 const drrmReports = [
-  { title: "DRRM School Risk Assessment Report and Checklist", href: "/assets/report/iboes-DRRM-School Risk Assessment Report and Checklist.pdf" }
+  { title: "DRRM School Risk Assessment Report and Checklist", href: "/assets/report/IBO-DRRM-SchoolRiskAssessmentReport.pdf" }
 ];
 
 const siteContext = [
