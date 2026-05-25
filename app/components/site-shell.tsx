@@ -9,6 +9,7 @@ const navItems = [
   { href: "https://iboinventory.vercel.app/", target: "_blank", rel: "noopener noreferrer", label: "Inventory" },
   { href: "https://iboeselibrary.my.canva.site/", target: "_blank", rel: "noopener noreferrer", label: "eLibrary" },
   { href: "/drrm", label: "DRRM" },
+  { href: "/school-issued-memorandums", label: "SIM" },
 ];
 
 const footerLinks = {

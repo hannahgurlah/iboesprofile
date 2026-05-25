@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SiteShell } from "../components/site-shell";
 
 const feedingReports = [
@@ -38,6 +39,13 @@ export default function AboutSchoolPage() {
           </ul>
         </aside> */}
       </section>
+
+      <section className="section-wrap" style={{ padding: "60px 0", marginBottom: "2rem" }}>
+        <Link className="subpage-cta" href="/school-issued-memorandums">
+          School Issued Memorandums (SIM)
+        </Link>
+      </section>
+
       <section className="section-space mt-25">
         <h2>Organizational Chart</h2>
         <div className="mt-25">
